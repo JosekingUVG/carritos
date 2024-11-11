@@ -4,6 +4,15 @@ public class Carrito implements  BMWClaseC{
     private boolean calefaccion, desempañador;
 
     public Carrito() {
+        this.tempInt = 20;
+        this.tempExt = 20;
+        this.nivelVentilacion = "Medio";
+        this.zonaVent = "Medio";
+        this.potencia = "Medio";
+        this.humedad = "Medio";
+        this.avisos = "";
+        this.calefaccion = true;
+        this.desempañador = true;
     }
 
     public Carrito(float tempInt, float tempExt, String nivelVentilacion, String zonaVent, String potencia,
