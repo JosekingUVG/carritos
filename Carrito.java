@@ -35,7 +35,7 @@ public class Carrito implements  BMWClaseC{
 
     @Override
     public void mostrarMenu() {
-        String menu = "Escoja una opción:\n1. Encender o apagar\n2. Ajustar temperatura\n3. Modo automático\n4. Nivel de ventilación\n5. Ventilación automática limitada\n6. Ventilación a zona específica\n7. Modo silencioso\n8. Calefacción rápida\n9. Distribución de aire\n10. Desempañador\n11. Personalizar niveles de humedad\n12. Indicador de humedad\n13. Historial de mantenimiento\n14. Programar mantenimiento";
+        
     }
 
     @Override
