@@ -6,13 +6,13 @@ public class Carrito implements  BMWClaseC{
     public Carrito() {
         this.tempInt = 20;
         this.tempExt = 20;
-        this.nivelVentilacion = "Medio";
-        this.zonaVent = "Medio";
-        this.potencia = "Medio";
-        this.humedad = "Medio";
+        this.nivelVentilacion = "medio";
+        this.zonaVent = "parabrisas";
+        this.potencia = "medio";
+        this.humedad = "medio";
         this.avisos = "";
-        this.calefaccion = true;
-        this.desempañador = true;
+        this.calefaccion = false;
+        this.desempañador = false;
     }
 
     public Carrito(float tempInt, float tempExt, String nivelVentilacion, String zonaVent, String potencia,
@@ -45,8 +45,8 @@ public class Carrito implements  BMWClaseC{
 
     @Override
     public float pedirTemperatura(float temp) {
-        this.tempExt = temp;
-        return tempExt;
+        this.tempInt = temp;
+        return tempInt;
     }
 
     @Override
@@ -73,7 +73,7 @@ public class Carrito implements  BMWClaseC{
 
     @Override
     public void pedirNivelHumedad(String nivel) {
-        
+        this.humedad = nivel;
     }
 
     @Override
@@ -98,6 +98,7 @@ public class Carrito implements  BMWClaseC{
 
     @Override
     public boolean mostrarDesempañador() {
+        this.desempañador = !this.desempañador;
         return desempañador;
     }
 
